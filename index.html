@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات مساج منزلية وفندقية</title>
+  <style>
+    * {margin:0; padding:0; box-sizing: border-box; font-family: 'Tahoma', sans-serif;}
+    body {background:#f9f9f9; color:#333; line-height:1.8;}
+    a {text-decoration:none; color:inherit;}
+
+    /* Navbar */
+    nav {
+      position: fixed; top:0; left:0; width:100%;
+      background:#006d77; color:#fff; display:flex; justify-content:space-between;
+      align-items:center; padding:15px 40px; z-index:1000;
+    }
+    nav .logo {font-size:20px; font-weight:bold;}
+    nav ul {list-style:none; display:flex; gap:20px;}
+    nav ul li a {color:#fff; transition:0.3s;}
+    nav ul li a:hover {color:#ffdd57;}
+
+    /* Header */
+    header {
+      height:100vh; background:url('https://i.ibb.co/VvGj6Y6/spa-bg.jpg') center/cover no-repeat;
+      display:flex; flex-direction:column; justify-content:center; align-items:center;
+      text-align:center; color:#fff; padding:0 20px;
+    }
+    header h1 {font-size:40px; margin-bottom:15px;}
+    header p {font-size:18px; margin-bottom:25px;}
+    .btns a {
+      display:inline-block; margin:10px; padding:12px 25px; border-radius:25px;
+      font-size:16px; font-weight:bold; transition:0.3s;
+    }
+    .btn-call {background:#ffdd57; color:#333;}
+    .btn-call:hover {background:#ffe88c;}
+    .btn-whatsapp {background:#25d366; color:#fff;}
+    .btn-whatsapp:hover {background:#32e377;}
+
+    /* Sections */
+    section {padding:80px 10%; text-align:center;}
+    section h2 {font-size:28px; color:#006d77; margin-bottom:30px;}
+    .services, .features {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:25px;
+    }
+    .card {
+      background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+    .card:hover {transform:translateY(-5px);}
+    .card img {width:100%; border-radius:10px; margin-bottom:15px;}
+    .card h3 {color:#333; margin-bottom:10px;}
+
+    /* Testimonials */
+    .testimonials {background:#edf6f9;}
+    .testimonial {
+      background:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1);
+      margin:10px; font-style:italic;
+    }
+
+    /* Footer */
+    footer {
+      background:#006d77; color:#fff; text-align:center; padding:20px;
+    }
+    footer a {color:#ffdd57; margin:0 8px;}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🌿 مساج منزلي & فندقي</div>
+    <ul>
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#features">مميزاتنا</a></li>
+      <li><a href="#contact">اتصل بنا</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>خدمات مساج منزلية وفندقية</h1>
+    <p>راحة، استرخاء، وتجديد أينما كنت</p>
+    <div class="btns">
+      <a href="tel:966500000000" class="btn-call">📞 اتصل بنا</a>
+      <a href="https://wa.me/966500000000" target="_blank" class="btn-whatsapp">💬 تواصل معنا</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>من نحن</h2>
+    <p>مركزنا يقدم تجربة استرخاء وتجديد متكاملة في منزلك أو فندقك، عبر فريق متخصص من المعالجين المحترفين مع استخدام منتجات عالية الجودة وتقنيات حديثة.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>خدماتنا</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://i.ibb.co/8bcHrR4/massage1.jpg" alt="مساج استرخاء">
+        <h3>مساج استرخاء</h3>
+        <p>للاسترخاء وتجديد الطاقة باستخدام زيوت عطرية طبيعية.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/pWwG1b3/massage2.jpg" alt="مساج علاجي">
+        <h3>مساج علاجي</h3>
+        <p>يخفف آلام العضلات والمفاصل ويعزز الدورة الدموية.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/5Y6Cfyt/massage3.jpg" alt="مساج فندقي VIP">
+        <h3>مساج فندقي VIP</h3>
+        <p>خدمة فاخرة مخصصة لنزلاء الفنادق مع تجربة مميزة.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <h2>مميزاتنا</h2>
+    <div class="features">
+      <div class="card">
+        <h3>🌱 منتجات طبيعية</h3>
+        <p>نستخدم زيوت وكريمات طبيعية وعضوية عالية الجودة.</p>
+      </div>
+      <div class="card">
+        <h3>💆‍♂️ معالجون محترفون</h3>
+        <p>فريق متخصص بخبرة طويلة في مختلف أنواع المساج.</p>
+      </div>
+      <div class="card">
+        <h3>✨ تقنيات حديثة</h3>
+        <p>أحدث أساليب وتقنيات المساج لتحقيق أفضل النتائج.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>آراء عملائنا</h2>
+    <div class="testimonial">“خدمة رائعة! أشعر بالراحة التامة بعد الجلسة 👌”</div>
+    <div class="testimonial">“أفضل تجربة مساج فندقي جربتها على الإطلاق 🌟”</div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>اتصل بنا</h2>
+    <p>📍 الرياض - جدة - الدمام</p>
+    <p>📞 0500000000 | 💬 <a href="https://wa.me/966500000000" target="_blank">واتساب</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 جميع الحقوق محفوظة | خدمات مساج منزلية وفندقية</p>
+    <p>
+      <a href="#">فيسبوك</a> | <a href="#">انستجرام</a> | <a href="#">تويتر</a>
+    </p>
+  </footer>
+
+</body>
+</html>
